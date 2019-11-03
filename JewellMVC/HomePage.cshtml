@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="~/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' />
+
+    
+    
+    <link href="~/css/contact.css" rel='stylesheet' type='text/css' />
+    
+
+    <link href="~/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="~/css/owl.theme.css" type="text/css" media="all">
+    <link href="~/css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+
+
+    <!-- js -->
+    <script src="~/js/jquery-2.2.3.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <!-- //js -->
+    <!-- password-script -->
+    <!-- required-js-files-->
+    <!-- carousel -->
+    <script src="~/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    900: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //carousel -->
+    <!--//required-js-files-->
+    <!-- start-smoth-scrolling -->
+    <script src="~/js/move-top.js"></script>
+    <script src="~/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+
+    <script>
+        $(document).ready(function () {
+            /*
+                                    var defaults = {
+                                            containerID: 'toTop', // fading element id
+                                        containerHoverID: 'toTopHover', // fading element hover id
+                                        scrollSpeed: 1200,
+                                        easingType: 'linear'
+                                        };
+                                    */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- Necessary-JS-File-For-Bootstrap -->
+    <!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+    <script src="~/js/jquery-1.7.2.js"></script>
+    <script src="~/js/jquery.quicksand.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
+
+
+
+
+</head>
+<body>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <!--footer-->
+    <footer>
+
+        <div class="instagram-posts">
+            <h3 class="tittle cen foot">Istagram Posts</h3>
+            <div class="row footer-top">
+                <!-- instagram posts -->
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g6.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g2.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g4.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g6.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g8.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-2 footer-grid-img">
+                    <a href="single.html">
+                        <img src="~/images/g1.jpg" class="img-fluid" alt="" />
+                    </a>
+                </div>
+            </div>
+            <!-- //instagram posts -->
+            <!-- subscribe -->
+            <div class="footer-bottom-w3layouts-agileinfo">
+                <div class="subscribe-main text-center">
+                  
+                </div>
+                <!-- //subscribe -->
+                <!-- footer -->
+                <div class="footer-cpy text-center">
+                    <div class="footer-social">
+                        <div class="copyrighttop">
+                            <ul>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <span>Google+</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <span>Pinterest</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="copyrightbottom-w3ls-agile">
+                        <p>
+                            © 2019 Jewel. All Rights Reserved | Design by
+                            
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- //footer -->
+            </div>
+        </div>
+    </footer>
+    <!---->
+
+
+
+</body>
+</html>
